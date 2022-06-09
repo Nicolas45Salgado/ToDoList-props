@@ -76,7 +76,7 @@ export default function LeftSideBarComponent(props: ILeftSideBarComponent) {
 
   const handleButtonClick = () => {
     addTodo({
-      id: inputId,
+      id: Math.random().toString(),
       text: todoText,
     });
     setTodoText("");
